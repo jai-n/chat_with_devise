@@ -12,19 +12,8 @@ development:
   adapter: mysql2
   encoding: utf8
   database: devise_with_chat_development
-  pool: 5
   username: root
   password:
   host: localhost
   socket: /opt/lampp/var/mysql/mysql.sock
 
-
-production:
-  adapter: postgresql
-  encoding: utf8
-  database: d18aad3omokqve
-  username: iqjzolxfgalbfw
-  port: 5432
-  password: v6-jDLOXWXWFyBCe-xXvPXVSiH
-  host: ec2-54-221-196-140.compute-1.amazonaws.com
- 
