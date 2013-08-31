@@ -11229,3 +11229,222 @@ Started GET "/" for 127.0.0.1 at 2013-08-31 17:11:58 +0530
 Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/cis/Desktop/jaiapp/chatapp/chat_with_devise-II/config/routes.rb:5)
+
+
+Started GET "/messages" for 127.0.0.1 at 2013-08-31 19:22:31 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMessage Load (1.1ms)[0m  [1mSELECT `messages`.* FROM `messages`[0m
+  Rendered messages/_message.html.erb (89.3ms)
+  Rendered messages/index.html.erb within layouts/application (172.7ms)
+Completed 200 OK in 652ms (Views: 577.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:32 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-31 19:22:34 +0530
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-08-31 19:22:38 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-31 19:22:38 +0530
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2013-08-31 19:22:41 +0530
