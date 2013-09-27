@@ -1,10 +1,17 @@
 ChatWithDeviseIi::Application.routes.draw do
+  get "sessions/create"
   root "home#index"
   # devise_for :users
   resources :messages
-  devise_for :users do 
-    get '/users/sign_out' => 'devise/sessions#destroy' 
+  # devise_for :users do 
+  #   get '/users/sign_out' => 'devise/sessions#destroy' 
+  #   get '/users/sign_in' => 'devise/sessions#new' 
+  #   # post '/users/sign_in' => 'sessions#create'
+  # end
+  devise_for :users, :controllers => {:sessions => "sessions"} do 
+    get '/users/sign_out' => 'sessions#destroy' 
     get '/users/sign_in' => 'devise/sessions#new' 
+    # post '/users/sign_in' => 'sessions#create'
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

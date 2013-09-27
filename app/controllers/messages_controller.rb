@@ -5,14 +5,13 @@ class MessagesController < ApplicationController
   
   def index
   	@messages = Message.all
-  	authorize! :manage, current_user
+    @users = User.find(:all,:conditions=>['id !=? and status =?',current_user.id,true])
   end
 
 	def create
 	  @message = Message.create!(params[:message].permit(:content))
 	  PrivatePub.publish_to("/messages/new", message: @message)
 	# PrivatePub.publish_to("/messages/new", "alert('#{@message.content}');")
-		authorize! :manage, current_user
 	end
 	private
 

@@ -1,0 +1,22 @@
+<h4>Online Users</h4>
+<table>
+	<%unless @users.blank? %>
+		<thead>
+			<tr><td>Email</td><td></td></tr>
+		</thead>
+		<tbody>
+			<% @users.each do |user|%>
+				<tr>
+					<td>
+						<%=user.email %>
+					</td>
+					<td>
+						<%=link_to "chat now" ,"#"%>
+					</td>
+				</tr>
+			<%end%>
+		</tbody>
+	<%else%>
+		no users
+	<%end%>
+</table>

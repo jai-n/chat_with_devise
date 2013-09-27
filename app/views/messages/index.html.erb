@@ -1,12 +1,16 @@
 <%=title "Group Chat Zone" %>
 
-<ul id="chat">
-  <%= render @messages %>
+<ul id="user">
+  <%= render :partial =>"users/user"  %>
 </ul>
 
-<%= form_for Message.new, remote: true do |f| %>
-  <%= f.text_field :content %>
-  <%= f.submit "Send" %>
-<% end %>
+<!-- <ul id="chat">
+  <%#= render @messages %>
+</ul> -->
 
-<%= subscribe_to "/messages/new" %>
+<%#= form_for Message.new, remote: true do |f| %>
+  <%#= f.text_field :content %>
+  <%#= f.submit "Send" %>
+<%# end %>
+
+<%#= subscribe_to "/messages/new" %>
